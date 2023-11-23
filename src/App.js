@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import PlayersList from './PlayersList';
 
+{/*  the root component */}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/*  add the title*/}
+      <h1 style ={{color:"#9D233A",  margin: "60px 0"}}>FIFA PLAYERS CARD</h1>
+      {/* render the PlayList in the root component */}
+    < PlayersList/>
     </div>
   );
 }
